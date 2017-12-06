@@ -1,0 +1,59 @@
+@white-color: #fff;
+@black-color: #000000;
+@gray-color: #bebec0;
+@additional-color: #4758a5;
+@main-color: #384997;
+@form-color: #f5f9fa;
+
+@font-face{
+  font-family: PTSans;
+  font-weight: 400;
+  src:  url("../fonts/PT_Sans-Web-Regular.woff") format("woff");
+}
+
+@font-face{
+  font-family: PTSans;
+  font-weight: 700;
+  src: url("../fonts/PT_Sans-Web-Bold.woff") format("woff");
+}
+
+html{
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+p{
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+body{
+  font-family: PTSans, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color: @white-color;
+  margin: 0;
+  color: @black-color;
+}
+
+
+@import "blocks/main-container.less";
+@import "blocks/header.less";
+@import "blocks/menu.less";
+@import "blocks/content.less";
+@import "blocks/documents.less";
+@import "blocks/document.less";
+@import "blocks/last-news.less";
+@import "blocks/story.less";

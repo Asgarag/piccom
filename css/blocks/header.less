@@ -1,0 +1,150 @@
+.header__container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.header__logo{
+  margin-right: 3%;
+}
+
+.header__schedules{
+  margin-right: 4%;
+  position: relative;
+  width: 13%;
+}
+
+.header__schedule{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 0;
+    background-image: url(../images/time.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header__schedule-name{
+  font-weight: 700;
+}
+
+.header__form{
+  margin-right: 2.5rem;
+  width: 35%;
+}
+
+.header__form-hint{
+  font-weight: 700;
+}
+
+.header__form-fieldbox{
+  position: relative;
+  width: 100%;
+  margin-top: .5rem;
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header__form-input{
+  width: 100%;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  box-sizing: border-box;
+
+  &::-moz-placeholder{
+    color: @gray-color;
+  }
+
+  &::-webkit-input-placeholder{
+    color: @gray-color;
+  }
+
+  &::-ms-input-placeholder{
+    color: @gray-color;
+  }
+
+  &::placeholder{
+    color: @gray-color;
+  }
+}
+
+.header__form-label{
+  position: absolute;
+  left: -9999px;
+}
+
+.header__form-button{
+  background: none;
+  border: none;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-image: url(../images/keyboard_return.png);
+  background-repeat: no-repeat;
+  right: 1.2rem;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+}
+
+.header__contact{
+  width: 22%;
+  margin-left: 2rem;
+}
+
+.header__contact-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.header__contact-list-item{
+  position: relative;
+  margin-bottom: .5rem;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: -25px;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header__contact_phone::before{
+  background-image: url(../images/phone.png);
+}
+
+.header__contact_location::before{
+  background-image: url(../images/location.png);
+}
+
+.header__contact_email::before{
+  background-image: url(../images/email.png);
+}
