@@ -1,19 +1,39 @@
+@media screen and (min-width: 1025px) {
+
+  .content__main-info{
+    width: 60%;
+    display: inline-block;
+    margin-right: 8%;
+    vertical-align: top;
+  }
+
+  .content__aside-info{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .content__aside-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  .content__aside-inner{
+    width: 40%;
+  }
+}
+
 .content{
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.content__main-info{
-  width: 60%;
-  display: inline-block;
-  margin-right: 8%;
-  vertical-align: top;
-}
-
-.content__aside-info{
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
+.content__title{
+  margin-bottom: 2.6rem;
 }
 
 .content__form{
@@ -28,6 +48,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  margin-bottom: 4rem;
 }
 
 .content__form-hint{

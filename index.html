@@ -12,7 +12,7 @@
   <header class="header">
     <div class="main-container header__container">
       <div class="header__logo">
-        <img class="header__logo-image" src="images/logo.png">
+        <img class="header__logo-image" src="images/logo.svg">
       </div>
       <div class="header__schedules">
         <div class="header__schedule">
@@ -43,7 +43,7 @@
       <div class="header__contact">
         <ul class="header__contact-list">
           <li class="header__contact-list-item header__contact_phone">
-            <span class="header__contact-text">8 (8412) 450-054</span>
+            <span class="header__contact-text header__contact-text_tel">8 (8412) 450-054</span>
           </li>
           <li class="header__contact-list-item header__contact_location">
             <span class="header__contact-text">г. Пенза, ул. Карла Маркса, дом 5А, офис 309</span>
@@ -75,7 +75,7 @@
   <div class="content">
     <div class="main-container">
       <div class="content__main-info">
-        <h2 class="content__title title">Управляющие организации микрорайона Арбеково</h2>
+        <h2 class="content__title title title_xl">Управляющие организации микрорайона Арбеково</h2>
         <div class="content__description">
           <p>
             Управляющие организации микрорайона Арбеково – это группа специализированных управляющих компаний, объединившихся в декабре 2013 года для обслуживания многоквартирных домов микрорайона Арбеково. В нее вошли следующие управляющие организации: УО «Жилье-9-1»,
@@ -110,42 +110,44 @@
         </div>
       </div>
       <aside class="content__aside-info">
-        <h2 class="content__title title">Записаться на прием</h2>
-        <form class="content__form" method="post">
-          <div class="content__form-row">
-            <span class="content__form-hint">Введите ваше ФИО</span>
-            <div class="content__form-fieldbox content__form-fieldbox_name">
-              <input class="content__form-input" id="search" type="search" name="search" placeholder="Например, Иванов Иван Иваныч" required>
-              <label class="content__form-label" for="search">Например, Иванов Иван Иваныч</label>
+        <div class="content__aside-inner">
+          <h2 class="content__title title title_l">Записаться на прием</h2>
+          <form class="content__form" method="post">
+            <div class="content__form-row">
+              <span class="content__form-hint">Введите ваше ФИО</span>
+              <div class="content__form-fieldbox content__form-fieldbox_name">
+                <input class="content__form-input" id="search" type="search" name="search" placeholder="Например, Иванов Иван Иваныч" required>
+                <label class="content__form-label" for="search">Например, Иванов Иван Иваныч</label>
+              </div>
             </div>
-          </div>
-          <div class="content__form-row">
-            <span class="content__form-hint">Выберите дату приема</span>
-            <div class="content__form-fieldbox content__form-fieldbox_date">
-              <input class="content__form-input" id="search" type="search" name="search" placeholder="Например, 23 января" required>
-              <label class="content__form-label" for="search">Например, 23 января</label>
+            <div class="content__form-row">
+              <span class="content__form-hint">Выберите дату приема</span>
+              <div class="content__form-fieldbox content__form-fieldbox_date">
+                <input class="content__form-input" id="search" type="search" name="search" placeholder="Например, 23 января" required>
+                <label class="content__form-label" for="search">Например, 23 января</label>
+              </div>
             </div>
-          </div>
-          <div class="content__form-row">
-            <button class="contact__form-button button">Записаться</button>
-          </div>
-        </form>
+            <div class="content__form-row">
+              <button class="contact__form-button button">Записаться</button>
+            </div>
+          </form>
+        </div>
         <div class="documents">
           <header class="documents__header">
-            <h3 class="documents__title title">Документы</h3>
+            <h2 class="documents__title title title_l">Документы</h2>
             <a class="documents__link" href="#">Все документы →</a>
           </header>
           <div class="documents__links">
             <div class="documents__document-column document">
-              <img class="document__image" src="images/pdf.png" alt="pdf">
+              <img class="document__image" src="images/pdf.svg" alt="pdf">
               <a class="document__name" href="#">Лицензия</a>
             </div>
             <div class="documents__document-column document">
-              <img class="document__image" src="images/pdf.png" alt="pdf">
+              <img class="document__image" src="images/pdf.svg" alt="pdf">
               <a class="document__name" href="#">Свидетельство о государственной регистрации</a>
             </div>
             <div class="documents__document-column document">
-              <img class="document__image" src="images/pdf.png" alt="pdf">
+              <img class="document__image" src="images/pdf.svg" alt="pdf">
               <a class="document__name" href="#">Свидетельство о постановки на налоговый учет</a>
             </div>
           </div>
@@ -156,7 +158,7 @@
   <section class="last-news">
     <div class="main-container">
       <header class="last-news__header">
-        <h2 class="last-news__title title">Последние новости</h2>
+        <h2 class="last-news__title title title_l">Последние новости</h2>
       </header>
       <div class="last-news__content">
         <article class="last-news__item story">
@@ -167,7 +169,7 @@
           <div class="story__inner">
             <header class="story__header">
               <time class="story__time-year">2017</time>
-              <h3 class="story__title title">
+              <h3 class="story__title title title_m">
                 <a class="story__link" href="#">Новогодняя ёлка в ЖК «Арбековская застава»</a>
               </h3>
             </header>
@@ -181,7 +183,7 @@
           <div class="story__inner">
             <header class="story__header">
               <time class="story__time-year">2017</time>
-              <h3 class="story__title title">
+              <h3 class="story__title title title_m">
                 <a class="story__link" href="#">Научное шоу в ЖК «Арбековская застава»</a>
               </h3>
             </header>
@@ -195,7 +197,7 @@
           <div class="story__inner">
             <header class="story__header">
               <time class="story__time-year">2017</time>
-              <h3 class="story__title title">
+              <h3 class="story__title title title_m">
                 <a class="story__link" href="#">Веселые каникулы «Арбековской заставы»</a>
               </h3>
             </header>
@@ -205,8 +207,8 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="main-container">
-      <h2 class="footer__title title">Реквизиты</h2>
+    <div class="main-container footer__container">
+      <h2 class="footer__title title title_s">Реквизиты</h2>
       <div class="footer__column">
         <ul class="footer__list">
           <li class="footer__list-item">

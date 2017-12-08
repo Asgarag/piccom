@@ -17,9 +17,27 @@
   src: url("../fonts/PT_Sans-Web-Bold.woff") format("woff");
 }
 
-html{
-  font-size: 62.5%;
+@media screen and (min-width: 1025px) {
+
+  html{
+    font-size: 62.5%;
+  }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  html{
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  html{
+    font-size: 50%;
+  }
+}
+
 
 a{
   text-decoration: none;
@@ -40,6 +58,10 @@ p:last-child{
   margin-bottom: 0;
 }
 
+ul{
+  line-height: 1.7;
+}
+
 body{
   font-family: PTSans, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -50,6 +72,7 @@ body{
 
 
 @import "blocks/main-container.less";
+@import "blocks/title.less";
 @import "blocks/header.less";
 @import "blocks/menu.less";
 @import "blocks/content.less";
@@ -57,3 +80,4 @@ body{
 @import "blocks/document.less";
 @import "blocks/last-news.less";
 @import "blocks/story.less";
+@import "blocks/footer.less";
