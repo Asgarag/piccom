@@ -245,6 +245,9 @@ body {
   .menu__list-item:last-of-type {
     margin-right: 0;
   }
+  .menu__link {
+    padding: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu__switch {
@@ -259,6 +262,11 @@ body {
   .menu__list-item {
     text-align: center;
   }
+  .menu__link {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 .menu {
   background-color: #384997;
@@ -272,7 +280,6 @@ body {
 .menu__link {
   display: inline-block;
   color: #fff;
-  padding: 1.5rem;
 }
 .menu__switch {
   background: none;
@@ -442,13 +449,6 @@ body {
 }
 .documents__document-column:not(:last-of-type) {
   margin-bottom: 1rem;
-}
-.documents__links-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .document {
   display: -webkit-box;
