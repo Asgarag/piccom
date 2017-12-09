@@ -30,6 +30,7 @@
 .content{
   margin-top: 3rem;
   margin-bottom: 3rem;
+  min-height: 600px;
 }
 
 .content__title{
@@ -37,52 +38,53 @@
 }
 
 .content__form{
-  background-color: @form-color;
-  padding-top: 1rem;
+  background-color: @transparent-color;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
 
 .content__form-row{
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
 }
 
-.content__form-hint{
+.content__form-label{
   font-weight: 700;
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content__form-fieldbox{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0.5rem;
   position: relative;
 
   &::before{
     position: absolute;
     content: "";
-    left: 1.5rem;
+    left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../images/search.png);
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 .content__form-fieldbox_name::before{
-  background-image: url(../images/person.png);
+  background-image: url(../images/person.svg);
 }
 
 .content__form-fieldbox_date::before{
-  background-image: url(../images/date_range.png);
-}
-
-.content__form-label{
-  position: absolute;
-  left: -9999px;
+  background-image: url(../images/date_range.svg);
 }
 
 .content__form-input{
@@ -92,7 +94,7 @@
   padding-left: 4rem;
   box-sizing: border-box;
   border: 1px solid @gray-color;
-  background-color: @form-color;
+  background-color: @transparent-color;
 
   &::-moz-placeholder{
     color: @gray-color;
@@ -112,7 +114,10 @@
 }
 
 .contact__form-button{
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: @additional-color;
   color: @white-color;
   text-transform: uppercase;

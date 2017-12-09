@@ -1,28 +1,15 @@
 @media screen and (min-width: 1025px) {
 
   .header__logo{
-    margin-right: 3%;
-    width: 14%;
-  }
-
-  .header__schedules{
-    margin-left: 3rem;
-    margin-right: 2.5%;
     width: 14%;
   }
 
   .header__form{
-    margin-right: 5%;
     width: 42%;
   }
 
-  .header__contact{
-    width: 14%;
-    margin-left: 3rem;
-  }
-
-  .header__contact-text_tel{
-    font-size: 2rem;
+  .header__info-2{
+    width: 20%;
   }
 }
 
@@ -37,10 +24,6 @@
     order: 1;
     margin-top: 1rem;
   }
-
-  .header__contact-text_tel{
-    font-size: 2rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -52,51 +35,25 @@
   }
 
   .header__logo{
-    width: 70%;
+    width: 100%;
     margin-bottom: 1rem;
   }
 
-  .header__schedules{
-    width: 30%;
-    margin-left: 4rem;
+  .header__logo-image{
+    margin: auto;
   }
+}
 
-  .header__contact{
-    width: 40%;
-    margin-left: 4rem;
-  }
+.header{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .header__container{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   align-items: center;
   justify-content: space-between;
-}
-
-.header__schedules{
-  position: relative;
-}
-
-.header__schedule{
-  position: relative;
-
-  &::before{
-    position: absolute;
-    content: "";
-    left: -25px;
-    top: 0;
-    background-image: url(../images/time.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.header__schedule-name{
-  font-weight: 700;
 }
 
 .header__form-hint{
@@ -113,19 +70,19 @@
     left: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../images/search.png);
+    background-image: url(../images/search.svg);
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 .header__form-input{
   width: 100%;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   border: 1px solid @black-color;
 
   &::-moz-placeholder{
@@ -154,13 +111,13 @@
   background: none;
   border: none;
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
-  background-image: url(../images/keyboard_return.png);
+  background-image: url(../images/keyboard_return.svg);
   background-repeat: no-repeat;
   right: 1.2rem;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   text-indent: -9999px;
 }
 
@@ -183,20 +140,4 @@
     width: 25px;
     height: 25px;
   }
-}
-
-.header__contact_phone::before{
-  background-image: url(../images/phone.svg);
-}
-
-.header__contact_location::before{
-  background-image: url(../images/location.svg);
-}
-
-.header__contact_email::before{
-  background-image: url(../images/email.svg);
-}
-
-.header__contact-text_tel{
-  font-weight: 700;
 }

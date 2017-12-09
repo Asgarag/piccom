@@ -1,5 +1,23 @@
+@media screen and (min-width: 1025px) {
+
+  .story__time{
+    min-width: 7%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .story__time{
+    min-width: 10%;
+  }
+}
+
 .story{
   display: flex;
+
+  &:not(:last-of-type){
+    margin-bottom: 4rem;
+  }
 }
 
 .story__time-day{
@@ -14,7 +32,6 @@
 
 .story__time{
   text-align: center;
-  width: 15%;
 }
 
 .story__time-day, .story__time-month{
@@ -33,4 +50,8 @@
 
 .story__link{
   color: inherit;
+}
+
+.story__content{
+  margin-top: 2rem;
 }

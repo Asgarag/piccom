@@ -3,19 +3,7 @@
 @gray-color: #bebec0;
 @additional-color: #4758a5;
 @main-color: #384997;
-@form-color: #f5f9fa;
-
-@font-face{
-  font-family: PTSans;
-  font-weight: 400;
-  src:  url("../fonts/PT_Sans-Web-Regular.woff") format("woff");
-}
-
-@font-face{
-  font-family: PTSans;
-  font-weight: 700;
-  src: url("../fonts/PT_Sans-Web-Bold.woff") format("woff");
-}
+@transparent-color: #f5f9fa;
 
 @media screen and (min-width: 1025px) {
 
@@ -49,7 +37,7 @@ img{
 }
 
 p{
-  line-height: 2;
+  line-height: 1.7;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -63,7 +51,7 @@ ul{
 }
 
 body{
-  font-family: PTSans, Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   background-color: @white-color;
   margin: 0;
@@ -74,6 +62,7 @@ body{
 @import "blocks/main-container.less";
 @import "blocks/title.less";
 @import "blocks/header.less";
+@import "blocks/info.less";
 @import "blocks/menu.less";
 @import "blocks/content.less";
 @import "blocks/documents.less";
@@ -81,3 +70,6 @@ body{
 @import "blocks/last-news.less";
 @import "blocks/story.less";
 @import "blocks/footer.less";
+@import "blocks/breadcrumbs.less";
+@import "blocks/objects.less";
+@import "blocks/news.less";

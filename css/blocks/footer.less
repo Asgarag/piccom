@@ -1,3 +1,27 @@
+@media screen and (min-width: 769px) {
+
+  .footer__column{
+    display: inline-block;
+  }
+
+  .footer__company-name{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer__column, .footer__title{
+    display: none;
+  }
+
+  .footer__container{
+    text-align: center;
+  }
+}
+
 .footer{
   background-color: @main-color;
   color: @white-color;
@@ -6,7 +30,6 @@
 }
 
 .footer__column{
-  display: inline-block;
   vertical-align: top;
   margin-right: 2rem;
 
@@ -34,10 +57,4 @@
 .footer__container{
   position: relative;
   font-size: 1.3rem;
-}
-
-.footer__company-name{
-  position: absolute;
-  bottom: 0;
-  right: 1rem;
 }
