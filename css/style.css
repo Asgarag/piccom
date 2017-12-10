@@ -325,8 +325,14 @@ svg {
   display: inline-block;
   color: #fff;
   border-bottom: 3px solid #384997;
+  -webkit-transition: background-color, border-bottom 0.5s;
+  transition: background-color, border-bottom 0.5s;
 }
 .menu__link:hover {
+  background-color: #4758a5;
+  border-bottom: 3px solid #fff;
+}
+.menu__link_active {
   background-color: #4758a5;
   border-bottom: 3px solid #fff;
 }

@@ -55,9 +55,15 @@
   display: inline-block;
   color: @white-color;
   border-bottom: 3px solid @main-color;
+  transition: background-color,border-bottom .5s;
 
   &:hover{
     background-color: @additional-color;
     border-bottom: 3px solid @white-color;
   }
+}
+
+.menu__link_active{
+  background-color: @additional-color;
+  border-bottom: 3px solid @white-color;
 }
