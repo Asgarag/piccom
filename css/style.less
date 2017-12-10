@@ -37,7 +37,7 @@ img{
 }
 
 p{
-  line-height: 1.7;
+  line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -52,10 +52,20 @@ ul{
 
 body{
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   background-color: @white-color;
   margin: 0;
   color: @black-color;
+}
+
+svg{
+  fill: @additional-color;
+}
+
+.page{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 20rem;
 }
 
 
@@ -73,3 +83,5 @@ body{
 @import "blocks/breadcrumbs.less";
 @import "blocks/objects.less";
 @import "blocks/news.less";
+@import "blocks/pagination.less";
+@import "blocks/contacts.less";

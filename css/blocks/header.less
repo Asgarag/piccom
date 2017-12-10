@@ -1,5 +1,9 @@
 @media screen and (min-width: 1025px) {
 
+  .header__info_schedule{
+    margin-bottom: 1.5rem;
+  }
+
   .header__logo{
     width: 14%;
   }
@@ -11,9 +15,17 @@
   .header__info-2{
     width: 20%;
   }
+
+  .header__switches{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .header__info:not(:last-of-type){
+    margin-bottom: .5rem;
+  }
 
   .header__logo{
     width: 30%;
@@ -24,6 +36,10 @@
     order: 1;
     margin-top: 1rem;
   }
+
+  .header__switches{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -32,15 +48,25 @@
     width: 100%;
     order: 1;
     margin-top: 2rem;
+    display: none;
+  }
+
+  .header__info-1{
+    display: none;
+    margin-bottom: .5rem;
+  }
+
+  .header__info-2{
+    display: none;
   }
 
   .header__logo{
-    width: 100%;
     margin-bottom: 1rem;
+    width: 50%;
   }
 
-  .header__logo-image{
-    margin: auto;
+  .header__info:not(:last-of-type){
+    margin-bottom: 1rem;
   }
 }
 
@@ -54,10 +80,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
-
-.header__form-hint{
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .header__form-fieldbox{
@@ -84,6 +107,8 @@
   padding-left: 4rem;
   padding-right: 4rem;
   border: 1px solid @black-color;
+  border-radius: 0;
+  box-shadow: none;
 
   &::-moz-placeholder{
     color: @gray-color;
@@ -103,8 +128,7 @@
 }
 
 .header__form-label{
-  position: absolute;
-  left: -9999px;
+  font-weight: 700;
 }
 
 .header__form-button{
@@ -119,6 +143,7 @@
   width: 24px;
   height: 24px;
   text-indent: -9999px;
+  cursor: pointer;
 }
 
 .header__contact-list{
@@ -140,4 +165,31 @@
     width: 25px;
     height: 25px;
   }
+}
+
+.header__form_active{
+  display: block;
+}
+
+.header__info_active{
+  display: block;
+}
+
+.header__switches{
+  min-width: 30%;
+  text-align: right;
+}
+
+.header__switch{
+  background: none;
+  border: none;
+  padding: 0;
+
+  &:not(:last-of-type){
+    margin-right: 2rem;
+  }
+}
+
+.header__logo-link{
+  display: block;
 }

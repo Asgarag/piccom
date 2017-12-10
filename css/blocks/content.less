@@ -19,7 +19,6 @@
   .content__aside-info{
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
   }
 
   .content__aside-inner{
@@ -27,13 +26,19 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+
+  .content__aside-info{
+    margin-top: 3rem;
+  }
+}
+
 .content{
   margin-top: 3rem;
   margin-bottom: 3rem;
-  min-height: 600px;
 }
 
-.content__title{
+.content__header, .content__form-header{
   margin-bottom: 2.6rem;
 }
 
@@ -41,7 +46,8 @@
   background-color: @transparent-color;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
 }
 
 .content__form-row{
@@ -95,6 +101,8 @@
   box-sizing: border-box;
   border: 1px solid @gray-color;
   background-color: @transparent-color;
+  border-radius: 0;
+  box-shadow: none;
 
   &::-moz-placeholder{
     color: @gray-color;
@@ -125,4 +133,10 @@
   padding-bottom: 1rem;
   box-sizing: border-box;
   border: none;
+  transition: background-color .5s;
+  cursor: pointer;
+
+  &:hover{
+    background-color: @main-color;
+  }
 }

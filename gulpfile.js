@@ -17,12 +17,12 @@ gulp.task('default', function () {
 });
 
 gulp.task('build', function() {
-    gulp.src('index.html')
+    gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'))
     gulp.src('css/style.css')
     .pipe(csso())
     .pipe(gulp.dest('build/css'))
-    gulp.src('scripts/main.js')
+    gulp.src('scripts/*.js')
     .pipe(gulp.dest('build/scripts'))
 });
