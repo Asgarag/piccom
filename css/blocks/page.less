@@ -10,17 +10,32 @@
 
   .page__aside{
     min-width: 42rem;
-    margin-left: 12rem;
+    margin-left: 11rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .aside{
+    margin-top: 3rem;
   }
 }
 
 .page{
-  min-height: 100vh;
-  position: relative;
-  padding-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .page__inner{
   margin-top: 2.6rem;
   margin-bottom: 5rem;
+}
+
+.page__layout{
+  flex: 1 0 auto;
+}
+
+.page__title{
+  margin-bottom: 3rem;
 }

@@ -1,9 +1,8 @@
 @media screen and (min-width: 769px) {
 
-  .documents__document-row{
-    display: inline-block;
+  .documents__row{
     width: 30%;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-right: 5%;
 
     &:nth-child(1){
@@ -44,17 +43,21 @@
 }
 
 .documents__column:not(:last-of-type){
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.documents__title{
+  margin-bottom: 2.5rem;
 }
 
 .documents__link{
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
 }
 
 .documents__icon{
-  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
   height: 46px;
   margin-right: 1rem;
 }
