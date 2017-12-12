@@ -1,56 +1,26 @@
-@media screen and (min-width: 1025px) {
-
-  .content__main-info{
-    width: 60%;
-    display: inline-block;
-    margin-right: 8%;
-    vertical-align: top;
-  }
-
-  .content__aside-info{
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-  .content__aside-info{
+  .aside{
     display: flex;
     justify-content: space-between;
   }
 
-  .content__aside-inner{
-    width: 40%;
+  .aside__section{
+    width: 45%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-
-  .content__aside-info{
-    margin-top: 3rem;
-  }
-}
-
-.content{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.content__header, .content__form-header{
-  margin-bottom: 2.6rem;
-}
-
-.content__form{
+.aside__form{
   background-color: @transparent-color;
   padding-top: 3rem;
   padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   margin-bottom: 5rem;
   font-size: 1.5rem;
 }
 
-.content__form-row{
+.aside__form-row{
   margin-bottom: 3rem;
 
   &:last-of-type{
@@ -58,16 +28,16 @@
   }
 }
 
-.content__form-label{
-  font-weight: 700;
+.aside__form-label{
   display: block;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2.5rem;
 }
 
-.content__form-fieldbox{
-  width: 90%;
+.aside__form-hint{
+  font-weight: 700;
+}
+
+.aside__form-fieldbox{
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
@@ -76,28 +46,28 @@
   &::before{
     position: absolute;
     content: "";
-    left: 1rem;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 }
 
-.content__form-fieldbox_name::before{
+.aside__form-fieldbox_name::before{
   background-image: url(../images/person.svg);
 }
 
-.content__form-fieldbox_date::before{
+.aside__form-fieldbox_date::before{
   background-image: url(../images/date_range.svg);
 }
 
-.content__form-input{
+.aside__form-input{
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 4rem;
+  padding-left: 40px;
   box-sizing: border-box;
   border: 1px solid @gray-color;
   background-color: @transparent-color;
@@ -121,8 +91,8 @@
   }
 }
 
-.contact__form-button{
-  width: 90%;
+.aside__form-button{
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;

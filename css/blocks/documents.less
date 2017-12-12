@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
 
-  .documents__document-row:not(:last-child){
+  .documents__row:not(:last-child){
     margin-bottom: 1rem;
   }
 }
@@ -43,10 +43,22 @@
   margin-bottom: 2.6rem;
 }
 
-.documents__document-column:not(:last-of-type){
-  margin-bottom: 1rem;
+.documents__column:not(:last-of-type){
+  margin-bottom: 2rem;
 }
 
 .documents__link{
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.documents__icon{
+  width: 40px;
+  height: 46px;
+  margin-right: 1rem;
+}
+
+.documents__name{
+  color: @additional-color;
 }
