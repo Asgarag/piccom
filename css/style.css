@@ -47,7 +47,7 @@ body {
   .main-container {
     margin-left: auto;
     margin-right: auto;
-    width: 1400px;
+    max-width: 1400px;
   }
 }
 .main-container {
@@ -88,8 +88,10 @@ body {
             flex-grow: 1;
   }
   .page__aside {
-    min-width: 42rem;
-    margin-left: 11rem;
+    width: 420px;
+    margin-left: 8%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -108,7 +110,7 @@ body {
   height: 100vh;
 }
 .page__inner {
-  margin-top: 2.6rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
 }
 .page__layout {
@@ -134,6 +136,9 @@ body {
   }
   .header__switches {
     display: none;
+  }
+  .header__contact:not(:last-of-type) {
+    margin-bottom: .2rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -182,7 +187,7 @@ body {
 }
 .header {
   padding-top: 3rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 3rem;
 }
 .header__container {
   display: -webkit-box;
@@ -249,7 +254,7 @@ body {
           transform: translateY(-50%);
   background-image: url(../images/keyboard_return.svg);
   background-repeat: no-repeat;
-  right: 1.2rem;
+  right: 1.5rem;
   width: 22px;
   height: 22px;
   text-indent: -9999px;
