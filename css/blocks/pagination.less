@@ -7,6 +7,12 @@
 .pagination__item{
   color: @additional-color;
   padding: .6rem 1rem;
+  transition: color, background-color .5s;
+
+  &:hover{
+    color: @white-color;
+    background-color: @additional-color;
+  }
 }
 
 .pagination__item_active{

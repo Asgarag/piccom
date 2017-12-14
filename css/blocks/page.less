@@ -1,10 +1,10 @@
 @media screen and (min-width: 1025px) {
 
-  .page__inner{
+  .page__container{
     display: flex;
   }
 
-  .page__content{
+  .page__main{
     flex-grow: 1;
   }
 
@@ -13,30 +13,157 @@
     margin-left: 8%;
     flex-shrink: 0;
   }
+
+  .page__group{
+    width: 30%;
+    margin-top: 5rem;
+    margin-right: 5%;
+
+    &:nth-child(1){
+      margin-top: 0;
+    }
+
+    &:nth-child(2){
+      margin-top: 0;
+    }
+
+    &:nth-child(3){
+      margin-top: 0;
+    }
+
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+
+  .page__grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page__map{
+    width: 55%;
+  }
+
+  .page__contacts{
+    width: 45%;
+    padding-left: 2rem;
+    padding-top: 4rem;
+    box-sizing: border-box;
+  }
+
+  .page__group-info{
+    width: 35%;
+    box-sizing: border-box;
+    margin-top: 3.5rem;
+
+    &:nth-child(2n){
+      margin-left: 15%;
+    }
+
+    &:nth-child(1){
+      margin-top: 0;
+    }
+
+    &:nth-child(2){
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .page__group{
+    width: 40%;
+    margin-top: 4rem;
+    margin-right: 10%;
+
+    &:nth-child(1){
+      margin-top: 0;
+    }
+
+    &:nth-child(2){
+      margin-top: 0;
+    }
+
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+
+  .page__grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page__group-info{
+    width: 23%;
+    box-sizing: border-box;
+    margin-right: 2.3%;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
 
-  .aside{
+  .page__aside{
     margin-top: 3rem;
+  }
+
+  .page__contacts{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .page__map{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .page__group:not(:last-of-type){
+    margin-bottom: 2rem;
+  }
+
+  .page__group-info:not(:last-of-type){
+    margin-bottom: 2rem;
+  }
+
+  .page__contacts{
+    margin-bottom: 2rem;
   }
 }
 
 .page{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .page__inner{
   margin-top: 4rem;
-  margin-bottom: 5rem;
 }
 
-.page__layout{
+.page__container{
+  padding-bottom: 4rem;
+}
+
+.content{
   flex: 1 0 auto;
 }
 
 .page__title{
   margin-bottom: 2.6rem;
+}
+
+.page__last-news{
+  margin-bottom: 7rem;
+}
+
+.page__news:not(:last-of-type){
+  margin-bottom: 4rem;
 }

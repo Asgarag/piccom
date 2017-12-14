@@ -40,6 +40,10 @@
   .header__switches{
     display: none;
   }
+
+  .header__schedule:not(:last-of-type), .header__contact:not(:last-of-type){
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -56,10 +60,6 @@
   }
 
   .header__logo{
-    margin-bottom: 1rem;
-  }
-
-  .header__info:not(:last-of-type){
     margin-bottom: 1rem;
   }
 }
@@ -200,4 +200,14 @@
 
 .header__logo-link{
   display: block;
+}
+
+.header__icon{
+  width: 22px;
+  height: 22px;
+}
+
+.header__contact-phone{
+  font-weight: 700;
+  font-size: 2rem;
 }
