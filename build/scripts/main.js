@@ -10,13 +10,16 @@ menu_switches[0].addEventListener("click", function(){
   menu.classList.remove('menu__list_active');
 })
 
+var now = moment();
+moment.locale('ru');
+
 var picker = new Pikaday({
     field: document.getElementById('datepicker'),
     format: 'D MMMM YYYY',
     firstDay: 1,
-    minDate: new Date(2000, 0, 1),
+    minDate: new Date(2017, 0, 1),
     maxDate: new Date(2020, 12, 31),
-    yearRange: [2000,2020],
+    yearRange: [2017,2020],
     showDaysInNextAndPreviousMonths: true,
     enableSelectionDaysInNextAndPreviousMonths: true
 });
