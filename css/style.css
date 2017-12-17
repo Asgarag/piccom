@@ -232,6 +232,10 @@ body {
 .page__section:not(:last-of-type) {
   margin-bottom: 5rem;
 }
+.page__map-hint {
+  position: absolute;
+  left: -9999px;
+}
 @media screen and (min-width: 1025px) {
   .header__schedule:first-of-type {
     margin-bottom: 1.2rem;
@@ -731,17 +735,10 @@ body {
   padding-right: 2.5rem;
   font-size: 1.5rem;
 }
-.aside__form-row {
-  margin-bottom: 3rem;
-}
-.aside__form-row:last-of-type {
-  margin-bottom: 0;
-}
 .aside__section:not(:last-of-type) {
   margin-bottom: 5rem;
 }
-.aside__form-label {
-  display: block;
+.aside__form-row {
   margin-bottom: 3rem;
 }
 .aside__form-hint {
