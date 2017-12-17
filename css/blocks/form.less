@@ -1,0 +1,58 @@
+.form__fieldbox{
+  position: relative;
+  margin-top: .5rem;
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.form__input{
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 40px;
+  border: 1px solid @gray-color;
+  border-radius: 0;
+  appearance: none;
+  box-sizing: border-box;
+
+  &::-moz-placeholder{
+    color: @gray-color;
+  }
+
+  &::-webkit-input-placeholder{
+    color: @gray-color;
+  }
+
+  &::-ms-input-placeholder{
+    color: @gray-color;
+  }
+
+  &::placeholder{
+    color: @gray-color;
+  }
+}
+
+.form__label{
+  font-weight: 700;
+}
+
+.form__fieldbox_name::before{
+  background-image: url(../images/person.svg);
+}
+
+.form__fieldbox_date::before{
+  background-image: url(../images/date_range.svg);
+}
+
+.form__fieldbox_search::before{
+  background-image: url(../images/search.svg);
+}
