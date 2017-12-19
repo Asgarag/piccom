@@ -1,17 +1,13 @@
 .form__fieldbox{
   position: relative;
-  margin-top: .5rem;
+  margin-top: .8rem;
+}
 
-  &::before{
-    position: absolute;
-    content: "";
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
-    width: 22px;
-    height: 22px;
-  }
+.form__icon{
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form__input{
@@ -23,6 +19,7 @@
   border-radius: 0;
   appearance: none;
   box-sizing: border-box;
+  font-size: 1.5rem;
 
   &::-moz-placeholder{
     color: @gray-color;
@@ -43,6 +40,7 @@
 
 .form__label{
   font-weight: 700;
+  cursor: pointer;
 }
 
 .form__fieldbox_name::before{

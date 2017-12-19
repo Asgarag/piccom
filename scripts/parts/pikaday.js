@@ -183,6 +183,9 @@
         // automatically show/hide the picker on `field` focus (default `true` if `field` is set)
         bound: undefined,
 
+        // data-attribute on the input field with an aria assistance tekst (only applied when `bound` is set)
+        ariaLabel: 'Use the arrow keys to pick a date',
+
         // position of the datepicker, relative to the field (default to bottom & left)
         // ('bottom' & 'left' keywords are not used, 'top' & 'right' are modifier on the bottom/left position)
         position: 'bottom left',
@@ -264,11 +267,11 @@
 
         // internationalization
         i18n: {
-            previousMonth : 'Предыдущий месяц',
-            nextMonth     : 'Следующий месяц',
-            months        : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-            weekdays      : ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
-            weekdaysShort : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб']
+            previousMonth : 'Previous Month',
+            nextMonth     : 'Next Month',
+            months        : ['January','February','March','April','May','June','July','August','September','October','November','December'],
+            weekdays      : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+            weekdaysShort : ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
         },
 
         // Theme Classname
@@ -1023,7 +1026,7 @@
 
             if (opts.bound) {
                 // let the screen reader user know to use arrow keys
-                opts.field.setAttribute('aria-label', 'Use the arrow keys to pick a date');
+                opts.field.setAttribute('aria-label', opts.ariaLabel);
             }
         },
 

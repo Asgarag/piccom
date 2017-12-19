@@ -5,13 +5,13 @@
     justify-content: space-between;
   }
 
-  .aside__section{
+  .aside__form-container, .aside__documents{
     width: 45%;
   }
 }
 
 .aside__form{
-  background-color: @transparent-color;
+  background-color: #f5f9fa;
   padding-top: 4rem;
   padding-bottom: 3rem;
   padding-left: 2.5rem;
@@ -19,8 +19,8 @@
   font-size: 1.5rem;
 }
 
-.aside__section:not(:last-of-type){
-  margin-bottom: 5rem;
+.aside__form-title{
+  margin-bottom: 3rem;
 }
 
 .aside__form-row{
@@ -29,19 +29,19 @@
 
 .aside__form-button{
   width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   background-color: @additional-color;
   color: @white-color;
   text-transform: uppercase;
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
-  box-sizing: border-box;
   transition: background-color .5s;
   font-size: 1.5rem;
 
   &:hover{
     background-color: @main-color;
   }
+}
+
+.aside__documents{
+  margin-top: 5rem;
 }

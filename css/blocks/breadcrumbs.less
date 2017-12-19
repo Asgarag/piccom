@@ -1,21 +1,30 @@
 .breadcrumbs{
-  background-color: @transparent-color;
+  background-color: #f5f9fa;
   font-size: 1.5rem;
 }
 
-.breadcrumbs__container{
+.breadcrumbs__list{
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
+  display: flex;
+}
+
+.breadcrumbs__list-item:not(:last-of-type)::after{
+  content: ">";
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: 700;
 }
 
 .breadcrumbs__link{
   color: @main-color;
 }
 
-.breadcrumbs__symbol{
+.breadcrumbs__link-active{
   font-weight: 700;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .breadcrumbs__name{
