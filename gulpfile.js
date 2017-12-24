@@ -11,7 +11,6 @@ var concat = require('gulp-concat');
 gulp.task('css', function () {
     return gulp.src('css/style.less')
         .pipe(less())
-        .pipe(csso())
         .pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
@@ -23,8 +22,10 @@ gulp.task('build', function () {
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'))
   gulp.src('css/style.css')
+  .pipe(csso())
   .pipe(gulp.dest('build/css'))
   gulp.src('scripts/main.js')
+  .pipe(uglify())
   .pipe(gulp.dest('build/scripts'))
 });
 
@@ -36,7 +37,6 @@ gulp.task('js', function () {
                 'scripts/parts/menu.js'
         ])
   .pipe(concat('main.js'))
-  .pipe(uglify())
   .pipe(gulp.dest('scripts'))
 });
 
